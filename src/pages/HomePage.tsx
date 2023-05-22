@@ -1,6 +1,7 @@
 import { Grid, Show, GridItem, Heading, Box } from "@chakra-ui/react";
 
-import ChatFrom from "../components/ChatFrom";
+import ChatForm from "../components/ChatForm";
+import AskedQuestions from "../components/AskedQuestions";
 
 const HomePage = () => {
   return (
@@ -17,13 +18,13 @@ const HomePage = () => {
       <Show above="lg">
         <GridItem area="aside" paddingX={5}>
           <Heading size="md" color="gray.100">
-            Recent Queries
+            <AskedQuestions />
           </Heading>
         </GridItem>
       </Show>
       <GridItem area="main">
         <Box marginX={5}>
-          <ChatFrom />
+          <ChatForm />
         </Box>
       </GridItem>
     </Grid>

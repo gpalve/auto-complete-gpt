@@ -7,13 +7,12 @@ const Navbar = () => {
   return (
     <Flex padding="10px" alignItems="center" justifyContent="space-between">
       <Link to="/">
-        <Image src={logo} boxSize="60px" />
+        <Image src={logo} boxSize="30px" />
       </Link>
 
-      <Heading flex="1" textAlign="center">
+      <Heading as='h3' size='lg' flex="1" textAlign="center">
         🚀 ShortGPT
       </Heading>
-
       <Box>
         <ColorModeSwitch />
       </Box>
