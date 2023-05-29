@@ -1,4 +1,4 @@
-# Auto Complete GPT <a href="shortgpt.netlify.app/"> Demo Link </a>
+# Auto Complete GPT <a href="https://shortgpt.netlify.app/"> Demo Link </a>
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
