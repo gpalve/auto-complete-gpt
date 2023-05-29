@@ -25,7 +25,7 @@ const ChatResponse = ({ response, isLoading }: Props) => {
             .map((line: string, index: number) => (
               <Box
                 key={index}
-                bg={index % 2 === 0 ? "whiteAlpha.300" : "whiteAlpha.200"} // Alternate background colors based on index
+                bg={"whiteAlpha.200"} // Alternate background colors based on index
                 w="100%"
                 padding={2}
                 marginY={2}

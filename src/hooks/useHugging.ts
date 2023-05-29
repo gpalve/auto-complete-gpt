@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import HuggingFaceClient from "../services/HuggingFaceClient";
 
-const hugging = new HuggingFaceClient( );
+const hugging = new HuggingFaceClient();
 
 const useHugging = (question: string) => {
   const payload = {

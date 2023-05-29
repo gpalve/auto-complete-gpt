@@ -10,8 +10,8 @@ const Navbar = () => {
         <Image src={logo} boxSize="30px" />
       </Link>
 
-      <Heading as='h3' size='lg' flex="1" textAlign="center">
-        🚀 ShortGPT
+      <Heading as="h3" size="md" flex="1" textAlign="center">
+        🚀 AutoCompleteGPT
       </Heading>
       <Box>
         <ColorModeSwitch />

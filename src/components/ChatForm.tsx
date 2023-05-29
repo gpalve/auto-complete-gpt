@@ -4,11 +4,13 @@ import useHugging from "../hooks/useHugging";
 import ChatResponse from "./ChatResponse";
 import { BiSend } from "react-icons/bi";
 import AlignQuestions from "./AlignQuestions";
+import useChatStore from "../store";
 
 const ChatForm = () => {
   const [question, setQuestion] = useState("");
   const [showAlignQuestions, setShowAlignQuestions] = useState(true);
   const [responseList, setResponseList] = useState<string[]>([]);
+  const { setAskedQuestion, resetQuestions } = useChatStore();
 
   const { data: response, isLoading, isSuccess } = useHugging(question);
 
@@ -25,6 +27,7 @@ const ChatForm = () => {
     e.preventDefault();
     setQuestion(inputRef.current?.value || "");
     setShowAlignQuestions(false); // Hide the AlignQuestions component
+    setAskedQuestion(inputRef.current?.value || "");
   };
 
   if (isSuccess && inputRef.current?.value) inputRef.current.value = "";
@@ -53,6 +56,7 @@ const ChatForm = () => {
           InitQuestion={(question) => {
             setQuestion(question);
             setShowAlignQuestions(false);
+            setAskedQuestion(question);
           }}
         />
       )}
@@ -64,6 +68,7 @@ const ChatForm = () => {
           setShowAlignQuestions(true);
           setQuestion("");
           setResponseList([]);
+          resetQuestions();
         }}
       >
         Reset
