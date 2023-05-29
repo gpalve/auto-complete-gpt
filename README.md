@@ -42,5 +42,5 @@ Make sure you have the following installed:
 4. Run Server 
    ```shell
    npm run dev 
-   <br />
+   
 <img src="https://github.com/gpalve/auto-complete-gpt/blob/main/ss.png?raw=true">
