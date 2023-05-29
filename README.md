@@ -6,7 +6,7 @@ This project is based on React Query, Zustand, Hugging Face Model APIs, Chakra U
 
 ## About
 
-Auto Complete GPT is a web application that leverages the power of the GPT-3.5 language model to provide autocomplete suggestions for text inputs. It uses React Query for data fetching and caching, Zustand for state management, Hugging Face Model APIs to interact with the GPT-3.5 model, and Chakra UI for the user interface.
+Auto Complete GPT is a web application that leverages the power of the HuggingFace OpenAssistant model to provide autocomplete suggestions for text inputs. It uses React Query for data fetching and caching, Zustand for state management, Hugging Face Model APIs to interact with the GPT-3.5 model, and Chakra UI for the user interface.
 
 ## Technologies Used
 
